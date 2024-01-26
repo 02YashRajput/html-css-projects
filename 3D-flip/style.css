@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Roboto,Arial;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-box{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style:preserve-3d;
+    transition: 0.8s;
+}
+.main-box:hover{
+    transform: rotateY(180deg);
+}
+
+.main-box .face{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    backface-visibility: hidden;
+}
+
+.main-box .front img{
+    height: 380px;
+    width: 280px;
+}
+.main-box .back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.main-box .back .image {
+    width: 100%;
+    height: 170px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(55, 163, 163);
+    border-radius: 5px;
+}
+.main-box .back .image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    object-fit: cover;
+}
+
+.main-box .back .about-me{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    align-items: center;
+    line-height: 30px;
+    color: rgba(0,0,0,0.8)
+}
+.main-box .back .about-me .name{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.main-box .back .about-me .known-language{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-box .back .icons{
+    display: flex;
+}
+
+.main-box .back .icons .instagram-image,
+.main-box .back .icons .linkedin-image,
+.main-box .back .icons .github-image{
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 9px 9px;
+}
+
+.main-box .back .icons .instagram-image{
+    background-color:#d62976 ;}
+.main-box .back .icons .linkedin-image{
+    background-color: #0077b5;
+}
+.main-box .back .icons .github-image{
+    background-color:  #6cc644;
+}

@@ -1,0 +1,124 @@
+.items{
+    width: 100%;
+    height: 200px;
+    padding: 25px 20px;
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.items a div{
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    transition:all 0.2s ease-in-out;
+    border-radius: 4px;
+    height: 100%;
+}
+.items div:hover{
+    width:150px ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15) ,-5px -5px 10px rgba(0, 0, 0, 0.15) ;
+
+}
+.items div img{
+    width: 80px;
+    height: 80px;
+}
+
+
+.mobiles,.laptops
+{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    background-color: #fff;
+    justify-content: space-around;
+}
+
+.mobiles .mobile-conatiner,
+.laptops .laptop-conatiner{
+    display: flex;
+    justify-content: space-around ;
+}
+.mobiles  h3,
+.laptops h3{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.mobiles .mobile-conatiner a div,
+.laptops .laptop-conatiner a div{
+    border: 1px solid rgb(96,96,96);
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:3px ;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    transition:all 0.2s ease-in-out;  
+}
+.mobiles .mobile-conatiner div>img, 
+.laptops .laptop-conatiner div>img{
+    width: 150px;
+}
+.mobiles .mobile-conatiner div:hover,
+.laptops .laptop-conatiner div:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15) ,-5px -5px 10px rgba(0, 0, 0, 0.15) ;
+    width: 220px;
+    height: 270px;
+}
+
+main .sale-2{
+    margin-top: 40px;
+    width: 100%;
+    height: 300px ;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+main .sale-2::after{
+    position: absolute;
+    content: '';
+    background: url(../images/sale-background/background-2.jpg);
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.shirts{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+.shirts div{
+
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 282px;
+    transition: all 0.2s ease-in-out;
+}
+.shirts div:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15) ,-5px -5px 10px rgba(0, 0, 0, 0.15) ;
+
+}
+.shirts div img{
+    border-radius: 15px;
+    height: 252px;
+    margin-bottom: 20px;
+}
